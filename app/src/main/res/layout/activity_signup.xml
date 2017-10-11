@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@layout/ptn_repeat"
+    android:orientation="vertical"
+    tools:context="com.example.mahan.foodpaz_login.SignupActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_authentication_container"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        app:cardElevation="50dp"
+        app:cardCornerRadius="10dp"
+        style="@style/CardView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_text_username"
+                    style="@style/authentication_edit_texts_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_authenticaton_edit_texts"
+                    android:hint="@string/lable_authentication_username_hint"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:textSize="@dimen/normal_font_size" />
+
+                <EditText
+                    android:id="@+id/edit_text_eamil"
+                    style="@style/authentication_edit_texts_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:background="@drawable/selector_authenticaton_edit_texts"
+                    android:hint="@string/label_authentication_email_hint"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textSize="@dimen/normal_font_size" />
+
+                <EditText
+                    android:id="@+id/edit_text_password"
+                    style="@style/authentication_edit_texts_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:background="@drawable/selector_authenticaton_edit_texts"
+                    android:hint="@string/label_authentication_password_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="32"
+                    android:maxLines="1"
+                    android:textSize="@dimen/normal_font_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/standard_margin"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <RadioButton
+                            android:id="@+id/female_radio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/standard_margin"
+                            android:text="زن" />
+
+                        <RadioButton
+                            android:id="@+id/male_radio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/standard_margin_x4"
+                            android:text="مرد" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="42dp"
+                            android:paddingTop="@dimen/standard_margin"
+                            android:text="جنسیت:"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/normal_font_size" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_authentication"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/standard_margin_x4"
+                    android:layout_marginRight="@dimen/standard_margin_x4"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/selector_accent_button"
+                    android:gravity="center"
+                    android:text="@string/label_sign_up"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/normal_font_size"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/standard_margin_x2"
+                    android:gravity="center"
+                    android:text="ورود با حساب فودپز "
+                    android:textColor="@color/border_sign_up_btn"
+                    android:textSize="@dimen/normal_font_size" />
+            </LinearLayout>
+        </ScrollView>
+
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

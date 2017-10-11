@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="label_login_amoozesh">امورش صفر تا صد اندروید</string>
+    <string name="label_login">ورود به حساب کاربری</string>
+    <string name="label_sign_up">ثبت نام</string>
+    <string name="lable_authentication_username_hint">نام کاربری</string>
+    <string name="label_authentication_email_hint">ادرس ایمیل</string>
+    <string name="label_authentication_password_hint">رمز عبور</string>
+
+</resources>
